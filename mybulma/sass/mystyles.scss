@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$lime:#00fdbe;
+$purple: #a45e8d;
+$trans-pink: #F5A9B8;
+$beige-light: #eaeaea;
+$off-dark: #181516;
+$off-off-dark: #070707;
+$off-off-off-dark: #111111;
+$trans-blue: #5bcefa;
+$greyish: #1d1d1d;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $purple;
+$grey-light: $beige-light;
+$primary: $lime;
+$link: $trans-pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $greyish;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+//my shit
+$title-color: $lime;
+$input-color: $trans-pink;
+$primary: $lime;
+$text-strong: $trans-pink;
+/////navbar
+$navbar-background-color: $off-dark;
+$navbar-item-color: $trans-pink;
+$navbar-item-hover-background-color: $off-off-dark;
+$navbar-dropdown-background-color: $off-off-off-dark;
+$navbar-dropdown-item-hover-color: $trans-blue;
+$navbar-dropdown-item-hover-background-color: $off-dark;
+$navbar-divider-background-color: $greyish;
+//$navbar-dropdown-item-active-color: $off-off-off-dark;
+//$navbar-dropdown-item-active-background-color: $off-off-dark;
+
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
