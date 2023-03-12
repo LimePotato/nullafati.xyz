@@ -8,41 +8,40 @@ $lime:#00fdbe;
 $purple: #a45e8d;
 $trans-pink: #F5A9B8;
 $beige-light: #eaeaea;
-$off-dark: #181516;
-$off-off-dark: #070707;
-$off-off-off-dark: #111111;
 $trans-blue: #5bcefa;
 $greyish: #1d1d1d;
+$mauve: #cba6f7;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $purple;
-$grey-light: $beige-light;
-$primary: $lime;
-$link: $trans-pink;
+$grey-dark: #313244;
+$grey-light: #45475a;
+$primary: #cdd6f4;
+$link: $mauve;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $greyish;
+$body-background-color: #1e1e2e;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
 
 //my shit
-$title-color: $lime;
-$input-color: $trans-pink;
-$primary: $lime;
-$text-strong: $trans-pink;
+$title-color: $mauve;
+$input-color: #b4befe;
+$primary: #cdd6f4;
+$text-strong: #b4befe;
+$text: #cdd6f4;
 /////navbar
-$navbar-background-color: $off-dark;
-$navbar-item-color: $trans-pink;
-$navbar-item-hover-background-color: $off-off-dark;
-$navbar-dropdown-background-color: $off-off-off-dark;
-$navbar-dropdown-item-hover-color: $trans-blue;
-$navbar-dropdown-item-hover-background-color: $off-dark;
-$navbar-divider-background-color: $greyish;
+$navbar-background-color: #181825;
+$navbar-item-color: #cba6f7;
+$navbar-item-hover-background-color: #11111b;
+$navbar-dropdown-background-color: #11111b;
+$navbar-dropdown-item-hover-color: #cba2fc;
+$navbar-dropdown-item-hover-background-color: #11111b;
+$navbar-divider-background-color: #585b70;
 //$navbar-dropdown-item-active-color: $off-off-off-dark;
 //$navbar-dropdown-item-active-background-color: $off-off-dark;
 
