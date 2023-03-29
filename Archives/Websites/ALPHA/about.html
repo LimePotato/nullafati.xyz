@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8" />
+        <title>
+            About Me - Alpha
+        </title>
+        <!-- add icon link -->
+        <link rel = "icon" href = "assets/obo-icon.png" 
+        type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{list-style: none;}
+        body{
+            /*to center the items*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-weight: bold;
+        }
+        .wrapper{
+            font-size: 4vw;
+            width: 50vw;
+            text-align: center;
+            display: flex;
+            
+        }
+        .normal-text{
+            color: white;
+            width: 35%;
+            display: inline-block;
+            text-align: left;
+        }
+        .dynamic-text {
+            display: inline-block;
+            height: 5vw;
+            overflow: hidden;
+        }
+        .dynamic-text li{
+            color: rgb(0, 255, 204);
+            margin: 0 0 2% 5px;
+            position: relative;
+            width: fit-content;
+            animation: slid 18s steps(3) infinite;
+            -webkit-animation: slid 18s steps(3) infinite;
+        }
+        .dynamic-text li::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid rgb(0, 255, 204);
+            left: 0;
+            background: #332e33;
+            animation: typing 3s steps(12) infinite;
+            -webkit-animation: typing 3s steps(12) infinite;
+        }
+        @keyframes typing {
+            50%{left:100%}
+            100%{left:0%}
+        }
+        @keyframes slid {
+           
+             50%{
+                 transform: translateY(calc(-15.5vw));
+                 -webkit-transform: translateY(calc(-15.5vw));
+                 -moz-transform: translateY(calc(-15.5vw));
+                 -ms-transform: translateY(calc(-15.5vw));
+                 -o-transform: translateY(calc(-15.5vw));
+        }
+             100%{ transform: translateY(0px);
+                 -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px); 
+                  -ms-transform: translateY(0px); 
+                  -o-transform: translateY(0px);}
+        }
+            </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="planet"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:rgb(0, 196, 157);">
+                <a href="#">
+                    <span class="icon"><ion-icon name="transgender-outline"></ion-icon></span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="projects.html">
+                <span class="icon"><ion-icon name="code-slash"></ion-icon></span>
+                <span class="text">Projects</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="photography.html">
+                <span class="icon"><ion-icon name="camera"></ion-icon></span>
+                <span class="text">Photography</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="videography.html">
+                <span class="icon"><ion-icon name="videocam"></ion-icon></span>
+                <span class="text">Videography</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="discord.html">
+                <span class="icon"><ion-icon name="logo-discord"></ion-icon></span>
+                <span class="text">Discord Server</span>
+            </a>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="old/index.html">
+                <span class="icon"><ion-icon name="archive"></ion-icon></span>
+                <span class="text">Old Site</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="BETA/index.html">
+                <span class="icon"><ion-icon name="code-working-outline"></ion-icon></span>
+                <span class="text">Beta Site</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="normal-text"> I'm a: </div> 
+        <ul class="dynamic-text">
+            <li>Developer.</li>
+            <li>Crazy Lady.</li>
+            <li>🏳️‍⚧️Transwoman.</li>
+            <li>Photographer.</li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('open')
+        }
+
+        const list = document.querySelectorALl('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

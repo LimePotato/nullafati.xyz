@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Refresh" content="0; url='https://www.youtube.com/channel/UCk_yKIpDnMv_DvuDb9RGfcA'"/>
+    <meta charset = "utf-8" />
+        <title>
+            Videography - Alpha
+        </title>
+        <!-- add icon link -->
+        <link rel = "icon" href = "assets/obo-icon.png" 
+        type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+</head>
+<body>
+    <div class="head"></div>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="planet"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="transgender-outline"></ion-icon></span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="projects.html">
+                <span class="icon"><ion-icon name="code-slash"></ion-icon></span>
+                <span class="text">Projects</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="photography.html">
+                <span class="icon"><ion-icon name="camera"></ion-icon></span>
+                <span class="text">Photography</span>
+            </a>
+        </li>
+        <li class="list active" style="--clr:rgb(0, 196, 157);">
+            <a href="#">
+                <span class="icon"><ion-icon name="videocam"></ion-icon></span>
+                <span class="text">Videography</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="discord.html">
+                <span class="icon"><ion-icon name="logo-discord"></ion-icon></span>
+                <span class="text">Discord Server</span>
+            </a>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="old/index.html">
+                <span class="icon"><ion-icon name="archive"></ion-icon></span>
+                <span class="text">Old Site</span>
+            </a>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="BETA/index.html">
+                    <span class="icon"><ion-icon name="code-working-outline"></ion-icon></span>
+                    <span class="text">Beta Site</span>
+                </a>
+            </li>
+        </li>
+        </ul>
+    </div>
+    <div class="content">
+        <a href="https://www.youtube.com/channel/UCk_yKIpDnMv_DvuDb9RGfcA">
+            <span class="icon"><ion-icon name="logo-youtube"></ion-icon></span>
+            <span class="text">YouTube</span>
+        </a>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('open')
+        }
+
+        const list = document.querySelectorALl('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

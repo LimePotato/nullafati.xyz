@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8" />
+        <title>
+            Photography - ALPHA
+        </title>
+        <!-- add icon link -->
+        <link rel = "icon" href = "assets/obo-icon.png" 
+        type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="head"></div>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="planet"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="transgender-outline"></ion-icon></span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="projects.html">
+                <span class="icon"><ion-icon name="code-slash"></ion-icon></span>
+                <span class="text">Projects</span>
+            </a>
+        </li>
+        <li class="list active" style="--clr:rgb(0, 196, 157);">
+            <a href="#">
+                <span class="icon"><ion-icon name="camera"></ion-icon></span>
+                <span class="text">Photography</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="videography.html">
+                <span class="icon"><ion-icon name="videocam"></ion-icon></span>
+                <span class="text">Videography</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="discord.html">
+                <span class="icon"><ion-icon name="logo-discord"></ion-icon></span>
+                <span class="text">Discord Server</span>
+            </a>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="old/index.html">
+                <span class="icon"><ion-icon name="archive"></ion-icon></span>
+                <span class="text">Old Site</span>
+            </a>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="BETA/index.html">
+                    <span class="icon"><ion-icon name="code-working-outline"></ion-icon></ion-icon></span>
+                    <span class="text">Beta Site</span>
+                </a>
+            </li>
+        </li>
+        </ul>
+    </div>
+    <div class="content">
+        <a href="#japan2018">
+            <span class="icon"><ion-icon name="airplane-outline"></ion-icon></span>
+            <span class="text">Japan Trip - 2018</span>
+        </a>
+    </div>
+    <div class="gallery">
+        <div id="japan2018">
+        <figure class=”gallery__item gallery__item--1>
+            <img src="assets/photogallery/japan-2018/PSX_1.jpg" class="gallery__img" alt="Image 1">
+        </figure>
+        <figure class=”gallery__item gallery__item--2>
+            <img src="assets/photogallery/japan-2018/PSX_2.jpg" class="gallery__img" alt="Image 2">
+        </figure>
+        <figure class=”gallery__item gallery__item--3>
+            <img src="assets/photogallery/japan-2018/PSX_3.jpg" class="gallery__img" alt="Image 3">
+        </figure>
+        <figure class=”gallery__item gallery__item--4>
+            <img src="assets/photogallery/japan-2018/PSX_4.jpg" class="gallery__img" alt="Image 4">
+        </figure>
+        <figure class=”gallery__item gallery__item--5>
+            <img src="assets/photogallery/japan-2018/PSX_5.jpg" class="gallery__img" alt="Image 5">
+        </figure>
+        <figure class=”gallery__item gallery__item--6>
+            <img src="assets/photogallery/japan-2018/PSX_6.jpg" class="gallery__img" alt="Image 6">
+        </figure>
+        <figure class=”gallery__item gallery__item--7>
+            <img src="assets/photogallery/japan-2018/PSX_7.jpg" class="gallery__img" alt="Image 7">
+        </figure>
+        <figure class=”gallery__item gallery__item--8>
+            <img src="assets/photogallery/japan-2018/PSX_8.jpg" class="gallery__img" alt="Image 8">
+        </figure>
+        <figure class=”gallery__item gallery__item--9>
+            <img src="assets/photogallery/japan-2018/PSX_9.jpg" class="gallery__img" alt="Image 9">
+        </figure>
+    </div>
+
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('open')
+        }
+
+        const list = document.querySelectorALl('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

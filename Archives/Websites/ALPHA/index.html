@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    <meta http-equiv="Refresh" content="0; url='https://limepot.xyz/BETA/'"/>
+    -->
+    <meta charset = "utf-8" />
+        <title>
+            Home - Alpha
+        </title>
+        <!-- add icon link -->
+        <link rel = "icon" href = "assets/obo-icon.png" 
+        type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="head"></div>
+    <div class="navigation">
+        <div class="mTitle"></div>
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list active" style="--clr:rgb(0, 196, 157);">
+                <a href="#">
+                    <span class="icon"><ion-icon name="planet"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="transgender-outline"></ion-icon></span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="projects.html">
+                <span class="icon"><ion-icon name="code-slash"></ion-icon></span>
+                <span class="text">Projects</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="photography.html">
+                <span class="icon"><ion-icon name="camera"></ion-icon></span>
+                <span class="text">Photography</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="videography.html">
+                <span class="icon"><ion-icon name="videocam"></ion-icon></span>
+                <span class="text">Youtube</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="discord.html">
+                <span class="icon"><ion-icon name="logo-discord"></ion-icon></span>
+                <span class="text">Discord</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="old/index.html">
+                <span class="icon"><ion-icon name="archive"></ion-icon></span>
+                <span class="text">Old Site</span>
+            </a>
+        </li>
+        <li class="list" style="--clr:rgb(0, 196, 157);">
+            <a href="BETA/index.html">
+                <span class="icon"><ion-icon name="code-working-outline"></ion-icon></span>
+                <span class="text">Beta Site</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+    <div class="content">
+        <button id="toggle-dark-light-mode">Toggle Dark/Light Mode</button>
+        <br><br><br>
+        <a href="#">0 Days since last incident.</a>
+        <br><br>
+        <p>"Forever - is composed of Nows</p>
+        <p>`Tis not a different time -</p>
+        <p>Except for Infiniteness -</p>
+        <p>And Latitude of Home -</p>
+        <br>
+        <p>From this - experienced Here -</p>
+        <p>Remove the Dates - to These -</p>
+        <p>Let Months dissolve in further Months -</p>
+        <p>And Years - exhale in Years ..."</p>
+        <p>- Emily Dickinson</p>
+        <br><br><br>
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+        <script>
+        kofiWidgetOverlay.draw('limepot', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support Me',
+            'floating-chat.donateButton.background-color': '#00bfa5',
+        'floating-chat.donateButton.text-color': '#fff'
+         });
+</script>
+        </div>
+        
+        <script>
+            const toggleButton = document.getElementById('toggle-dark-light-mode');
+            toggleButton.addEventListener('click', () => {
+              document.body.classList.toggle('darkmode');
+              document.body.classList.toggle('lightmode');
+            });
+          </script>
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('open')
+        }
+
+        const list = document.querySelectorALl('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
